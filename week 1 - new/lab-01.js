@@ -58,7 +58,7 @@ const people = [
 const funcPeople = ({name, age}) => {
     console.log(`My name is ${name}. I am ${age} year olds`);
   };
-  const person4 = {name: 'Annie', age: 21};
+  const person4 = {name: "Annie", age: 21};
   funcPeople(person4);
 
 /*
