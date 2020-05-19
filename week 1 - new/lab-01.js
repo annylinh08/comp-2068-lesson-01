@@ -55,10 +55,11 @@ const people = [
     template utilizing the properties you
     destructured.
 */
-const funcPeople = (name, age) => {
+const funcPeople = ({name, age}) => {
     console.log(`My name is ${name}. I am ${age} year olds`);
   };
-  funcPeople("Annie", "21");
+  const person4 = {name: 'Annie', age: 21};
+  funcPeople(person4);
 
 /*
   Step 3 (3 points):
@@ -68,5 +69,5 @@ const funcPeople = (name, age) => {
 */
 
 for (let person of people) {
-    console.log(funcPeople(person.name, person.age));
+    funcPeople(person);
   }
